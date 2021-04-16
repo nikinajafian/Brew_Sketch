@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/maj5krf.css" />
+    <script async type="text/javascript" src="scripts/brew.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Brew</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn blur-circle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="hide">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="locate.html">Where to Find Us</a></li>
+          <li><a href="subscrption.html">Subscription Program</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sect about col">
+      <h1>About Brew</h1>
+      <p>about brew goes here</p>
+    </div>
+  </body>
+  <script>
+    let menuBtn = document.querySelector(".menu-btn");
+    let nav = document.querySelector("nav");
+
+    menuBtn.addEventListener("click", function () {
+      if (nav.classList.contains("hide")) {
+        nav.classList.remove("hide");
+        nav.classList.add("show");
+        menuBtn.classList.remove("blur-circle");
+      } else {
+        nav.classList.add("hide");
+        nav.classList.remove("show");
+        menuBtn.classList.add("blur-circle");
+      }
+    });
+  </script>
+</html>
